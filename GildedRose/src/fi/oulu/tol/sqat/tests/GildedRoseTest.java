@@ -196,4 +196,14 @@ public class GildedRoseTest {
 
 	}
 	
+	// LOOP TESTING
+	
+	@Test
+	public void testSkipLoop() {
+
+		GildedRose inn = new GildedRose();
+		inn.oneDay();
+
+	}
+	
 }
