@@ -41,7 +41,7 @@ public class GildedRoseTest {
 		GildedRose inn = new GildedRose();
 		inn.setItem(new Item("+5 Dexterity Vest", 10, 20));
 		inn.setItem(new Item("Elixir of the Mongoose", 5, 7));
-		inn.setItem(new Item("Conjured Mana Cake", 3, 6));
+		inn.setItem(new Item("Conjured Mana Cake", 1, 6));
 		inn.oneDay();
 		
 		List<Item> items = inn.getItems();
@@ -60,7 +60,7 @@ public class GildedRoseTest {
 		
 		assertEquals("Failed sell in for Dexterity Vest", 9, sellIn0);
 		assertEquals("Failed sell in for Elixir of the Mongoose", 4, sellIn1);
-		assertEquals("Failed sell in for Conjured Mana Cake", 2, sellIn2);
+		assertEquals("Failed sell in for Conjured Mana Cake", 0, sellIn2);
 		
 	}
 	
